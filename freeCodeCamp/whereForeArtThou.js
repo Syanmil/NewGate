@@ -2,7 +2,13 @@ function whatIsInAName(collection, source) {
   // What's in a name?
   var arr = [];
   // Only change code below this line
-
+  console.log(Object.keys(collection[0]));
+  console.log(Object.keys(arguments[1]));
+    for (var j = 0; j < collection.length; j++) {
+      if (Object.keys(collection[j]) == Object.keys(arguments[1])){
+        return "x";
+      }
+    }
 
   // Only change code above this line
   return arr;
