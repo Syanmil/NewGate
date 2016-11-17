@@ -1,4 +1,10 @@
 function myReplace(str, before, after) {
+  if (before.charCodeAt(0) < 92){
+    after = after.split("");
+    after.splice(0, 1, after[0].toUpperCase());
+    after = after.join("");
+  }
+  str = str.replace(before, after);
   return str;
 }
 
