@@ -83,7 +83,7 @@ function nextTargetArea(code) {
       output += 3
     }
   }
-  return output
+  return `District ${output} is the next target!`
 }
 
 console.log(nextTargetArea('WTO')); // "District 2 is the next target!"
