@@ -1,6 +1,6 @@
 function sumFibs (num) {
   var fib = [1, 1]
-  while (num > fib[fib.length - 1]) {
+  while (num >= fib[fib.length - 1]) {
     fib.push((fib[ fib.length - 1 ]) + fib[ fib.length - 2 ])
   }
   fib.pop()
