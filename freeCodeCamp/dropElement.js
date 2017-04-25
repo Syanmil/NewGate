@@ -3,8 +3,14 @@
 // Return the rest of the array, otherwise return an empty array
 
 function dropElements (arr, func) {
-  // Drop them elements.
-  return arr
+  while (arr.length > 0) {
+    if (func(arr[0])) {
+      return arr
+    } else {
+      arr.shift()
+    }
+  }
+  return []
 }
 
 console.log(dropElements([1, 2, 3, 4], function (n) { return n >= 3 })) // [3, 4].
